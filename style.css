@@ -1,0 +1,486 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../poppins/Poppins-ExtraLight.ttf');
+}
+@font-face {
+    font-family: PoppinsHeavy;
+    src: url('../poppins/Poppins-Light.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: PoppinsHeavy, sans-serif;
+}
+body{
+    background: #dedede;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+    margin : 0;
+    padding : 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;   
+}
+
+.btn{
+    font-family: Poppins, sans-serif;
+    height: 35px;
+    width: 120px;
+    color: rgb(241, 238, 238);
+    background: rgba(44,62,80,0.9);
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+/************ Header section starts here **********/
+.dDown{
+   margin: 0 auto;
+   z-index: 1;
+   position: sticky;
+   top: 0;
+   box-shadow:0 3px 7px rgba(0,0,0,0.5)
+}
+
+nav{
+    height: 60px;
+    background: rgba(44,62,80,0.9);
+    font-size: 10px;
+}
+
+.logo{
+    padding: 5px 0 0 70px;
+    width:80px;
+    height:auto;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul ul li{
+    background: rgba(44,62,80,0.9);
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    z-index: 1;
+}
+nav ul li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    z-index: 1;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    background: rgba(36,51,66,0.7);
+    border-radius: 5px;
+}
+
+nav ul ul{
+        position: absolute;
+        top: 60px;
+        display: none;
+}
+
+
+nav ul li:hover > ul{
+    display: block; 
+    border-radius: 5px;
+}
+
+nav ul ul li{
+    width: 165px;
+    float: none;
+    display: list-item;
+    position: relative;
+    border-radius: 5px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 165px;
+}
+/************ Header section starts here **********/
+
+
+
+/************ HOME section starts here **********/
+
+.home{
+    z-index: -1;
+}
+
+.home .home-slider .item{
+    position: relative;
+}
+
+.home .home-slider .item img{
+    height: 92vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.home .home-slider .item .content{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+}
+
+.home .home-slider .item .content h3{
+    color: #2c3e50;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.home .home-slider .item .content p{
+    color: #fff; 
+    font-size: 1rem;
+    padding: 10px;
+
+}
+
+.content{
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/************ HOME section ends here **********/
+
+
+/************ Brands section ends here **********/
+.brands{   
+    margin: 20px auto;
+    width: 80vw;
+}
+
+.brand{
+    width: 230px;
+    margin: 19px;
+}
+/************ Brands section ends here **********/
+
+
+
+/************ PRODUCTS section Starts here **********/
+.products{
+    margin: 50px auto;
+}
+.products img{
+    width: 33.4vw;
+}
+
+.men, .women, .kids{
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.products .details{
+    position: absolute;
+    width: 101%;
+    height: 98%;
+    top: 0;
+    left: 0;
+}
+
+.one:hover .details{
+    background-color: rgba(218, 249, 255, 0.3);
+    transition: 0.3s all;
+    
+}
+
+.one .details button{
+    display: inline-block;
+    font-size: 14px;
+    transform: translateY(50px);
+}
+
+.one .details{
+    transition: 0.3s all;
+    text-align: center;
+}
+
+.one .details h2{
+    color: #fff;
+    margin-top: 25%;
+}
+/************ PRODUCTS section ends here **********/
+
+
+/************ FEATURED section starts here **********/
+
+.featured, .accessories, .testimonials{
+    margin: 40px 0;
+}
+
+.f-items{
+    margin-left: 50px;
+    width: 100%;
+}
+
+.f-details{
+    margin: 3rem 0;
+}
+.f-details, .item-details{
+    text-align: center;    
+}
+
+.f-details h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.f-details p{
+    margin: 15px;
+}
+
+.item-details h5,h4{
+    padding: 5px;
+} 
+.item-details{
+    margin: 10px 0;
+}
+
+.card{
+    width: 20%;
+    display: inline-block;
+    margin: 0 20px;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px ;
+}
+
+.card .img{
+    cursor: pointer;
+    height: 300px;
+    object-fit: cover;
+    background-position: center center;
+    transition: 0.3s all;
+}
+
+.card .img:hover{
+    opacity: 0.7;
+    transition: 0.3s all;
+}
+
+.card .buy-btn{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    margin-top: 10px;
+}
+
+.card:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+hr{
+    width: 70px;
+    text-align: center;
+    height: 2px;
+    background-color: #2c3e50;
+    margin: auto;
+}
+/************ FEATURED section ends here **********/
+
+
+/************ BANNER section ends here **********/
+.banner1{
+    background-image: url("img/winter\ women.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.banner2{
+    background-image: url("img/female\ banner1.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ban{
+    margin-left: 10vw;
+    padding-top: 15vh;
+    width: 100%;
+}
+.ban h1{
+    color: #dedede;
+    font-size: 40px;
+    padding: 20px 0;
+}
+.ban1 h4{
+    color: #ffffff;
+    text-shadow: 2px 2px 15px #0b6b4b;
+}
+.ban2 h4{
+    color: #6b531f;
+    text-shadow: 2px 2px 15px #ffffff;
+}
+/************ BANNER section ends here **********/
+
+
+/************ TESTIMONIAL section ends here **********/
+.testimonials .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    display: block;
+    margin: auto;
+    border: 6px solid white;
+}
+
+.t-items{
+    margin: auto;
+    width: 100%;
+    margin-left: 150px;
+}
+
+.test{
+    margin: 0 0vw;
+    padding: 40px;
+}
+
+.test img{
+    object-fit: cover;
+}
+
+.test p{
+    text-align: justify;
+}
+
+.b{
+    border-right: 2px solid black ;
+}
+/************ TESTIMONIAL section ends here **********/
+
+
+/************ FOOTER section STARTS here **********/
+
+.footer{
+    background-color: #2c3e50;
+    box-sizing: border-box;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 70px 0px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 40px;
+}
+
+.footer ul li{
+    margin-bottom: 10px;
+}
+
+.footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    transition: all 0.3s ease;
+}
+
+.footer ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+.footer-col .socials img{
+     display: inline-block;
+     width: 30px;
+     margin: 5px;
+     transition: all 0.3s ease;
+}
+
+.footer-col .socials img:hover{
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+    color: rgb(228, 228, 228);
+    background-color: #1e2b38;
+}
+
+/************ FOOTER section ends here **********/

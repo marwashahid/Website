@@ -1,0 +1,28 @@
+
+<html>
+<head>
+	<title>My Part </title>
+	<style>
+		h1{align: center;}
+		p{text-align: center;}
+		h4{text-align: center;}
+		img{content-align: center;}
+		.img{
+		content-align:center;
+backgroung-color: pink;
+padding: 20px;
+}
+	</style>
+</head>
+<body>
+	<br/><br/>	
+<h1>T-Shirt</h1>
+
+<p><b>Description: </b>This product hoese qualities.</p>
+
+<div class="img"><img src="C:\Users\sabri\Pictures\34567890\c1.png" alt="c1" align="middle"></div>
+
+	
+</body>
+</html>
+

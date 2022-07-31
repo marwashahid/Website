@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+    <title>Checkout Form</title>
+    </head>
+    <style>
+        .heading{ background-color:burlywood; width:100% ; height:20%;} 
+        .brand{text-align:left; position:fixed; top:30px; font-size:30px; margin-left:2cm; color:black;}
+        .subscript{text-align:left;position:fixed; top:80px;margin-left:2cm; color:black;}
+        .text {position:relative; top:50px; text-align:center}
+        .form{font-size:20px; width:40%; height:70%; background-color:beige; margin-left:350px;}
+        .box{margin-left:2cm; height:30px;}
+         .box1 {margin-left:2cm; height:30px;}
+         .box2 {margin-left:2cm; height:30px;}
+          .email{margin-left:2cm; height:30px;}
+          .city {margin-left:2cm; height:30px;}
+          .country {margin-left:2cm; height:30px;}
+          .method{ font-size:20px;width:25.5%; height:70%; background-color:blanchedalmond;position: fixed; top:3.4cm;}
+          .box3{margin-left:0.5cm; height:30px;}
+          .option{margin-left:0.5cm; height:30px;}
+          .box4 {margin-left:0.5cm; height:30px;}
+           .box5{margin-left:0.5cm; height:30px;}
+           .box6{margin-left:2cm; height:30px;}
+           .s{ margin-top:1cm;} .click{margin-top:1cm; width:300px; height:0.75cm;}
+           .cart{text-align: center;background-color: wheat; width: 24%;height:50%;position:fixed; top:3.7cm; right:3cm; font-size:22px;}
+           .image{text-align:right;position:fixed;top:13cm; right:3cm; }
+        </style>
+    <body>
+    <div class="heading">
+        <h1 class="brand" ><i>Sweet Sixteen</i></h1>
+        <sub class="subscript">A premium quality brand since 1998</sub>
+        <h1 class="text">CheckOut Form</h1>
+    </div>
+    <div class="form">
+    <form> Full name:<br><input class="box2" type=text name=firstname size=40px; ><br>
+        Address:<br><input class="box" type=address name=address size= 50px;><br>
+        Contact no:<br><input class="box1" type= number name=contact size=60px;><br>
+        Email address:<br><input class="email" type= email name= email size= 40 px;><br>
+        City:<br><input class="city" type= city name= city size= 40 px;><br>
+        Zip:<br><input class="box6" type= number name=zip size=40px;><br>
+        Country:<br><input class="country" type= country name= country size= 40 px;><br>
+    
+    </form>
+    </div>
+    <div class="method">
+    Payment method:<br><select class="option">
+        <option>Debit Card</option>
+        <option>Credit Card</option>
+        <option>JazzCash</option>
+        <option>Cash On Delivery</option>
+    </select>
+    <form>Name on card:<br><input class="box3" type=text name= card size= 40px;><br>
+        Credit Card Number:<br><input class="box4" type= number name= number size= 40px;><br>
+        Expected month:<br><input class="box5" type=number name=number1 size=40px;><br>
+     <input class= "s" type = checkbox name= checkbox size= 40px;>Shipping address same as billing address<br>
+     <input class="click" type= submit name= continue value="continue to check out"  onclick= Continue to checkout()>
+    </form>
+    </div>
+    <div class="cart">
+    <form>Cart &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 items<br><br>
+    Item1  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $14<br><br>
+    Item2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $30<br><br>
+    Item3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  $20<br><br>
+    Item4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $15<br><br>
+    Total  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $79<br><br></form>
+    </div>
+    <div class="image">
+        <img src="C:\Users\Marwa Shahid\Downloads\customers1.jpg" height="15%"  width="25%"></img>
+    </div>
+    </body>
